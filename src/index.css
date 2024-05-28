@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.carousel-container {
+ max-width: 100%;
+ white-space: nowrap;
+ overflow: hidden;
+ position: relative;
+}
+
+@keyframes marquee {
+ 0% {
+   transform: translateX(0);
+ }
+ 100% {
+   transform: translateX(-50%);
+ }
+}
+
+.animate-marquee {
+ display: flex;
+ gap: 2.25rem; 
+ width: calc(100% * 2); 
+}
